@@ -53,7 +53,8 @@ body {
 .content-section {
     display: none;
     flex: 1;
-    overflow: hidden;
+    overflow: auto;
+    padding: 0 20px 0 20px;
 }
 
 .content-section:target {
