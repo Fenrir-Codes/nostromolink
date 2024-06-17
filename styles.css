@@ -1,0 +1,62 @@
+body {
+    font-family: monospace;
+    background-color: black;
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+}
+
+.console {
+    display: flex;
+    width: 100%;
+    height: 99.5vh;
+    border: 2px solid green;
+    background-color: #001100;
+}
+
+.folders {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #002200;
+    flex-shrink: 0;
+}
+
+.folder-link {
+    background-color: #003300;
+    color: green;
+    border: 2px solid green;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 20px;
+    width: 220px;
+    height: 50px;
+}
+
+.folder-link:hover {
+    background-color: #005500;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    border-left: 2px solid green;
+}
+
+.content-section {
+    display: none;
+    flex: 1;
+    overflow: hidden;
+}
+
+.content-section:target {
+    display: flex;
+    flex-direction: column;
+}
